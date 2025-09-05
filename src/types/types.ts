@@ -7,3 +7,11 @@ export interface CodeBlockProps {
     code: string;
     language: string;
 }
+
+export interface CourseCardProps {
+    language: string;
+    topic: string;
+    role: string;
+    description: string;
+    fullDescription: string;
+}
