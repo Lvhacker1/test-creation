@@ -1,4 +1,4 @@
-import { CodeBlockProps, NavLinks } from "@/types/types";
+import { CodeBlockProps, CourseCardProps, NavLinks } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -18,3 +18,76 @@ export const codeBlockProps: CodeBlockProps[] = [
     { code: "echo Hello", language: "Bash" },
     { code: "fn main() { println!(\"Hello\"); }", language: "Rust" }
 ];
+
+export const courseCards: CourseCardProps[] = [
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    },
+    {
+        language: "", 
+        topic: "", 
+        role: "", 
+        description: "", 
+        fullDescription: ""
+    }
+]
