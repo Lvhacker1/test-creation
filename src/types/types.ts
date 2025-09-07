@@ -15,3 +15,8 @@ export interface CourseCardProps {
     description: string;
     fullDescription: string;
 }
+
+export interface PageIntroProps {
+    title: string;
+    description: string;
+}

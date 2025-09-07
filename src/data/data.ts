@@ -1,4 +1,4 @@
-import { CodeBlockProps, CourseCardProps, NavLinks } from "@/types/types";
+import { CodeBlockProps, CourseCardProps, NavLinks, PageIntroProps } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -91,3 +91,18 @@ export const courseCards: CourseCardProps[] = [
         fullDescription: "Rust focuses on safety and performance. It prevents common bugs like null pointer dereferences and data races, making it ideal for high-performance, safe applications."
     }
 ]
+
+export const pageIntroData: Record<string, PageIntroProps> = {
+    home: {
+        title: "Welcome to homeblablabla",
+        description: "blabalbalabfosld,äö,asndjlmdölöll,s"
+    },
+    courses: {
+        title: "Welcome to coursesblablabla",
+        description: "blabalbalabajkhdk,grefefwedededll,s"
+    },
+    about: {
+        title: "About jshnlskjmxblablabla",
+        description: "blabalbalabajkhdkodköldk,össdfsdtghthts"
+    }
+}
