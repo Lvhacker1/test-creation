@@ -94,15 +94,15 @@ export const courseCards: CourseCardProps[] = [
 
 export const pageIntroData: Record<string, PageIntroProps> = {
     home: {
-        title: "Welcome to homeblablabla",
-        description: "blabalbalabfosld,äö,asndjlmdölöll,s"
+        title: "Code Playground",
+        description: "Play, experiment, and tinker with programming concepts in an interactive way."
     },
     courses: {
-        title: "Welcome to coursesblablabla",
-        description: "blabalbalabajkhdk,grefefwedededll,s"
+        title: "The Language Lab",
+        description: "Discover programming languages through real examples and see them in action."
     },
     about: {
-        title: "About jshnlskjmxblablabla",
-        description: "blabalbalabajkhdkodköldk,össdfsdtghthts"
+        title: "Behind the Screen",
+        description: "Meet the minds shaping our playground and learn why we code the way we do."
     }
 }
