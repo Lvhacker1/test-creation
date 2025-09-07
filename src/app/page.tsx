@@ -1,8 +1,14 @@
-import Image from "next/image";
+import PageIntro from "@/components/PageIntro";
+import { pageIntroData } from "@/data/data";
 
 export default function Home() {
+  const intro = pageIntroData["home"]
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-    </div>
+    <main>
+      <div>
+        <PageIntro {...intro} />
+      </div>
+    </main>
   );
 }

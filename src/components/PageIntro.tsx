@@ -8,3 +8,5 @@ const PageIntro = ({title, description}: PageIntroProps) => {
         </div>
     )
 }
+
+export default PageIntro;
