@@ -20,3 +20,9 @@ export interface PageIntroProps {
     title: string;
     description: string;
 }
+
+export interface FooterProops {
+    copyright: string;
+    description: string;
+    year: number;
+}

@@ -1,4 +1,4 @@
-import { CodeBlockProps, CourseCardProps, NavLinks, PageIntroProps } from "@/types/types";
+import { CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -73,4 +73,10 @@ export const pageIntroData: Record<string, PageIntroProps> = {
         title: "Behind the Screen",
         description: "Meet the minds shaping our playground and learn why we code the way we do."
     }
+}
+
+export const footerData: FooterProops = {
+    copyright: "©",
+    year: new Date().getFullYear(),
+    description: "Code Playground. All rights reserved."
 }
