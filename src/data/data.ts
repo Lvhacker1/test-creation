@@ -7,7 +7,7 @@ export const navLinks: NavLinks[] = [
 ];
 
 export const codeBlockProps: CodeBlockProps[] = [
-    { code: "console.log('Hello, world!');", language: "javascript" },
+    { code: "console.log('Hello, world!');", language: "Javascript" },
     { code: "print('Hello')", language: "Python" },
     { code: "let x: number = 5;", language: "TypeScript" },
     { code: "#include <iostream>\nint main() { std::cout << \"Hello\"; }", language: "C++" },

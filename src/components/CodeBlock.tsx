@@ -10,7 +10,7 @@ const CodeBlock = ({code, language}: CodeBlockProps) => {
 
     return (
         <div className="p-3 border rounded-lg bg-white shadow-md">
-            <p>{language}</p>
+            <h4 className="font-bold mb-2">{language}</h4>
             <button onClick={handleToggle}>
                 {showCode ? "Hide" : "Run"}
             </button>
