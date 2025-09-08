@@ -1,16 +1,17 @@
+import CodeBlock from "@/components/CodeBlock";
 import CourseCard from "@/components/CourseCard";
 import PageIntro from "@/components/PageIntro";
-import { courseCards, pageIntroData } from "@/data/data";
+import { codeBlockProps, courseCards, pageIntroData } from "@/data/data";
 
 const CoursesPage = () => {
     const intro = pageIntroData["courses"]
 
     return (
-        <main>
+        <main className="flex flex-col gap-15 py-5 px-5 lg:px-15">
             <div>
                 <PageIntro {...intro} />
             </div>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {courseCards.map((course, index) => (
                     <CourseCard
                     key={index}
@@ -21,6 +22,11 @@ const CoursesPage = () => {
                     fullDescription={course.fullDescription}
                     />
                 ))}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {codeBlockProps.map((codeBlockProps, index ) => 
+                <CodeBlock key={index} code={codeBlockProps.code} language={codeBlockProps.language} />
+            )}
             </div>
         </main>
     )

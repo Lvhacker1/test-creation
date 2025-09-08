@@ -12,11 +12,7 @@ export const codeBlockProps: CodeBlockProps[] = [
     { code: "let x: number = 5;", language: "TypeScript" },
     { code: "#include <iostream>\nint main() { std::cout << \"Hello\"; }", language: "C++" },
     { code: "public class Main { public static void main(String[] args) { System.out.println(\"Hello\"); } }", language: "Java" },
-    { code: "echo 'Hello';", language: "PHP" },
-    { code: "puts 'Hello'", language: "Ruby" },
-    { code: "printf(\"Hello\\n\");", language: "C" },
-    { code: "echo Hello", language: "Bash" },
-    { code: "fn main() { println!(\"Hello\"); }", language: "Rust" }
+    { code: "printf(\"Hello\\n\");", language: "C" }
 ];
 
 export const courseCards: CourseCardProps[] = [
@@ -56,39 +52,11 @@ export const courseCards: CourseCardProps[] = [
         fullDescription: "Java is portable across platforms thanks to the Java Virtual Machine. Widely used for backend services, enterprise systems, and Android app development."
     },
     {
-        language: "PHP",
-        topic: "Web Development",
-        role: "Websites, CMS",
-        description: "PHP is a server-side scripting language.",
-        fullDescription: "PHP is mainly used for web development and server-side scripting. Powers many websites, content management systems, and e-commerce platforms."
-    },
-    {
-        language: "Ruby",
-        topic: "Backend",
-        role: "Web Applications",
-        description: "Ruby is dynamic and simple for web development.",
-        fullDescription: "Ruby is known for simplicity and productivity. Popularized by the Ruby on Rails framework, making rapid web development and clean code possible."
-    },
-    {
         language: "C",
         topic: "System Programming",
         role: "Operating Systems, Embedded Systems",
         description: "C is foundational for system programming.",
         fullDescription: "C provides low-level memory access and efficiency. Often used in operating systems, embedded devices, and performance-critical applications."
-    },
-    {
-        language: "Bash",
-        topic: "System Administration",
-        role: "Automation, Scripting",
-        description: "Bash automates tasks in Unix environments.",
-        fullDescription: "Bash is a Unix shell and command language used to automate tasks, manage systems, and write scripts for DevOps and system administration."
-    },
-    {
-        language: "Rust",
-        topic: "System Programming",
-        role: "Safe, High-Performance Applications",
-        description: "Rust is safe and fast for system programming.",
-        fullDescription: "Rust focuses on safety and performance. It prevents common bugs like null pointer dereferences and data races, making it ideal for high-performance, safe applications."
     }
 ]
 
