@@ -7,7 +7,7 @@ const CoursesPage = () => {
     const intro = pageIntroData["courses"]
 
     return (
-        <main className="flex flex-col gap-15 py-5 px-5 lg:px-15">
+        <main className="flex flex-col gap-15 p-5 lg:px-15">
             <div>
                 <PageIntro {...intro} />
             </div>
