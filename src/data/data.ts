@@ -78,5 +78,5 @@ export const pageIntroData: Record<string, PageIntroProps> = {
 export const footerData: FooterProops = {
     copyright: "©",
     year: new Date().getFullYear(),
-    description: "Code Playground. All rights reserved."
+    description: "Code Playground | All rights reserved."
 }
