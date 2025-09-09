@@ -32,3 +32,9 @@ export interface AboutSectionTypes {
     role: string;
     description: string;
 }
+
+export interface ActionButtonTypes {
+    title: string;
+    href: string;
+    description: string;
+}

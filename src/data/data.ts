@@ -1,4 +1,4 @@
-import { AboutSectionTypes, CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
+import { AboutSectionTypes, ActionButtonTypes, CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -86,3 +86,16 @@ export const aboutData: AboutSectionTypes = {
     role: "Creator & Developer",
     description: "Code Playground was born when I realized I was talking more to my Red Bull than to people, and it still makes more sense than this almost nonexistent page. Right now the site is like a student apartment. A table, a chair and a microwave, technically livable but you really wish for a few more pieces of furniture."
 }
+
+export const actionButtonData: ActionButtonTypes[] = [
+    {
+        title: "Start Experimenting",
+        href: "/courses",
+        description: "Where 6 programming languages wait to confuse and enlighten you"
+    },
+    {
+        title: "Meet the Mind",
+        href: "/about",
+        description: "Meet the developer who has more browser tabs open than brain cells functioning"
+    }
+]
