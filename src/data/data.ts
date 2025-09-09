@@ -1,4 +1,4 @@
-import { CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
+import { AboutSectionTypes, CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -79,4 +79,10 @@ export const footerData: FooterProops = {
     copyright: "©",
     year: new Date().getFullYear(),
     description: "Code Playground | All rights reserved."
+}
+
+export const aboutData: AboutSectionTypes = {
+    name: "Lava Sharif",
+    role: "Creator & Developer",
+    description: "Code Playground was born when I realized I was talking more to my Red Bull than to people, and it still makes more sense than this almost nonexistent page. Right now the site is like a student apartment. A table, a chair and a microwave, technically livable but you really wish for a few more pieces of furniture."
 }
