@@ -6,7 +6,7 @@ Interactive web application for exploring 6 programming languages through code e
 
 
 # Components:
-- total 6 components
+- total 8 components
 
     1. NavLinks
     2. Header
@@ -14,12 +14,14 @@ Interactive web application for exploring 6 programming languages through code e
     4. CodeBlock
     5. CourseCard
     6. Footer
+    7. ActionButtons
+    8. AboutSection
 
 
 Note: 
     - All components use TypeScript interfaces. 
-    - PageIntro, CodeBlock, and CourseCard receive data as props. 
-    - NavLinks and Footer import data directly from data file.
+    - PageIntro, CodeBlock, CourseCard, and ActionButtons receive data as props.
+    - NavLinks, Footer, and AboutSection import data directly from data file
 
 
 1. NavLinks Component/
@@ -31,7 +33,7 @@ Note:
 
 3. PageIntro Component/
     Props: title, description strings
-    Functions: Displays page-specific content
+    Functions: Displays page intro content
 
 4. CodeBlock Component/
     Props: code, language strings
@@ -47,22 +49,43 @@ Note:
     Functions: Displays copyright info
     Data: footerData object with copyright, year, description
 
+7.  ActionButtons Component/
+    Props: title, href, description strings (from actionButtonData array)
+    Functions: Renders 2 navigation buttons with descriptions
+    Data: actionButtonData array with navigation information
+
+8. AboutSection Component/
+    Functions: Displays creator information and description
+    Data: aboutData object with name, role, description strings
+
 
 # Page Structure
 
 - Home Page (/)
-    Components: PageIntro only
-    Data: Uses pageIntroData["home"] with title "Code Playground"
-    Functionality: Static landing page, no interactive elements
+    Components: PageIntro + ActionButtons
+    Data: pageIntroData["home"] + actionButtonData array
+    Functionality: Static page with styled navigation links
+    Content: Welcome message with 2 navigation buttons to courses and about
 
 - Courses Page (/courses)
     Components: PageIntro + CourseCards + CodeBlocks
-    Data Sources: pageIntroData["courses"], courseCards array, codeBlockProps array
+    Data Sources: pageIntroData["courses"] + courseCards array + codeBlockProps array
     Rendered instances: CourseCard renders 6 times, CodeBlock renders 6 times
     Interactive Elements: 12 toggle buttons total (6 "Read More/Less" + 6 "Run/Hide")
     Functionality: Independent toggle states for each component
 
 - About Page (/about)
-    Components: PageIntro only
-    Data: Uses pageIntroData["about"] with title "Behind the Screen"
-    Functionality: Static information page, no interactive elements
+    Components: PageIntro + AboutSection
+    Data: pageIntroData["about"] + aboutData object
+    Functionality: Static information page displaying creator personality and platform purpose
+    Content: Platform information and creator details
+
+# Data Arrays and Objects
+
+- navLinks: 3 navigation items
+- pageIntroData: 3 page configurations (home, courses, about)
+- courseCards: 6 programming language courses
+- codeBlockProps: 6 code examples
+- actionButtonData: 2 navigation buttons
+- aboutData: Creator information
+- footerData: Site footer content
