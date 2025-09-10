@@ -68,8 +68,8 @@ Note:
     Content: Welcome message with 2 navigation buttons to courses and about
 
 - Courses Page (/courses)
-    Components: PageIntro + CourseCards + CodeBlocks
-    Data Sources: pageIntroData["courses"] + courseCards array + codeBlockProps array
+    Components: PageIntro + CourseCard + CodeBlock
+    Data Sources: pageIntroData["courses"] + languageCourses array + codeExamples array
     Rendered instances: CourseCard renders 6 times, CodeBlock renders 6 times
     Interactive Elements: 12 toggle buttons total (6 "Read More/Less" + 6 "Run/Hide")
     Functionality: Independent toggle states for each component
@@ -85,8 +85,8 @@ Note:
 
 - navLinks: 3 navigation items
 - pageIntroData: 3 page configurations (home, courses, about)
-- courseCards: 6 programming language courses
-- codeBlockProps: 6 code examples
-- actionButtonData: 2 navigation buttons
+- languageCourses: 6 programming language courses
+- codeExamples: 6 code examples
+- callToActionsData: 2 navigation buttons
 - aboutData: Creator information
 - footerData: Site footer content
