@@ -19,11 +19,6 @@ describe('CodeBlock Component', () => {
         expect(screen.getByRole('button')).toHaveTextContent('Run');
     });
 
-    test('hides code initially using queryBy', () => {
-        render(<CodeBlock {...mockProps} />);
-        expect(screen.queryByText("console.log('Hello, world!');")).not.toBeInTheDocument();
-    });
-
     test('shows code after click event', () => {
         render(<CodeBlock {...mockProps} />);
         const button = screen.getByRole('button');

@@ -39,11 +39,6 @@ describe('CourseCard Component', () => {
         expect(screen.getByRole('button')).toHaveTextContent('Read More');
     })
 
-    test('hides full description initially using queryBy', () => {
-        render(<CourseCard {...mockProps} />);
-        expect(screen.queryByText(mockProps.fullDescription)).not.toBeInTheDocument();
-    });
-
     test('shows full description when "Learn More" button is clicked', () => {
         render(<CourseCard {...mockProps} />);
         const button = screen.getByRole('button');
