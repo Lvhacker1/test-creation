@@ -80,6 +80,7 @@ Note:
     Functionality: Static information page displaying creator personality and platform purpose
     Content: Platform information and creator details
 
+
 # Data Arrays and Objects
 
 - navLinks: 3 navigation items

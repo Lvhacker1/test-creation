@@ -1,3 +1,4 @@
+import ActionButtons from "@/components/ActionButtons";
 import PageIntro from "@/components/PageIntro";
 import { pageIntroData } from "@/data/data";
 
@@ -8,6 +9,9 @@ export default function Home() {
     <main className="flex flex-col gap-15 p-5 lg:px-15">
       <div>
         <PageIntro {...intro} />
+      </div>
+      <div>
+        <ActionButtons />
       </div>
     </main>
   );

@@ -26,3 +26,15 @@ export interface FooterProops {
     description: string;
     year: number;
 }
+
+export interface AboutSectionTypes {
+    name: string;
+    role: string;
+    description: string;
+}
+
+export interface ActionButtonTypes {
+    title: string;
+    href: string;
+    description: string;
+}
