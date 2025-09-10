@@ -1,4 +1,4 @@
-import { AboutSectionTypes, ActionButtonTypes, CodeBlockProps, CourseCardProps, FooterProops, NavLinks, PageIntroProps } from "@/types/types";
+import { AboutSectionTypes, ActionButtonTypes, CodeBlockTypes, CourseCardTypes, FooterTypes, NavLinks, PageIntroTypes } from "@/types/types";
 
 export const navLinks: NavLinks[] = [
     { name: "Home", href: "/" },
@@ -6,7 +6,7 @@ export const navLinks: NavLinks[] = [
     { name: "About", href: "/about" },
 ];
 
-export const codeBlockProps: CodeBlockProps[] = [
+export const codeExamples: CodeBlockTypes[] = [
     { code: "console.log('Hello, world!');", language: "Javascript" },
     { code: "print('Hello')", language: "Python" },
     { code: "let x: number = 5;", language: "TypeScript" },
@@ -15,7 +15,7 @@ export const codeBlockProps: CodeBlockProps[] = [
     { code: "printf(\"Hello\\n\");", language: "C" }
 ];
 
-export const courseCards: CourseCardProps[] = [
+export const languageCourses: CourseCardTypes[] = [
     {
         language: "JavaScript",
         topic: "Web Development",
@@ -60,7 +60,7 @@ export const courseCards: CourseCardProps[] = [
     }
 ]
 
-export const pageIntroData: Record<string, PageIntroProps> = {
+export const pageIntroData: Record<string, PageIntroTypes> = {
     home: {
         title: "Code Playground",
         description: "Play, experiment, and tinker with programming concepts in an interactive way."
@@ -75,7 +75,7 @@ export const pageIntroData: Record<string, PageIntroProps> = {
     }
 }
 
-export const footerData: FooterProops = {
+export const footerData: FooterTypes = {
     copyright: "©",
     year: new Date().getFullYear(),
     description: "Code Playground | All rights reserved."
@@ -87,7 +87,7 @@ export const aboutData: AboutSectionTypes = {
     description: "Code Playground was born when I realized I was talking more to my Red Bull than to people, and it still makes more sense than this almost nonexistent page. Right now the site is like a student apartment. A table, a chair and a microwave, technically livable but you really wish for a few more pieces of furniture."
 }
 
-export const actionButtonData: ActionButtonTypes[] = [
+export const callToActionsData: ActionButtonTypes[] = [
     {
         title: "Start Experimenting",
         href: "/courses",

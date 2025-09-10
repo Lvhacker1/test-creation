@@ -3,12 +3,12 @@ export interface NavLinks {
     href: string;
 }
 
-export interface CodeBlockProps {
+export interface CodeBlockTypes {
     code: string;
     language: string;
 }
 
-export interface CourseCardProps {
+export interface CourseCardTypes {
     language: string;
     topic: string;
     role: string;
@@ -16,12 +16,12 @@ export interface CourseCardProps {
     fullDescription: string;
 }
 
-export interface PageIntroProps {
+export interface PageIntroTypes {
     title: string;
     description: string;
 }
 
-export interface FooterProops {
+export interface FooterTypes {
     copyright: string;
     description: string;
     year: number;

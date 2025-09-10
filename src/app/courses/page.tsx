@@ -1,7 +1,7 @@
 import CodeBlock from "@/components/CodeBlock";
 import CourseCard from "@/components/CourseCard";
 import PageIntro from "@/components/PageIntro";
-import { codeBlockProps, courseCards, pageIntroData } from "@/data/data";
+import { codeExamples, languageCourses, pageIntroData } from "@/data/data";
 
 const CoursesPage = () => {
     const intro = pageIntroData["courses"]
@@ -11,8 +11,8 @@ const CoursesPage = () => {
             <div>
                 <PageIntro {...intro} />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {courseCards.map((course, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 items-start">
+                {languageCourses.map((course, index) => (
                     <CourseCard
                     key={index}
                     language={course.language}
@@ -23,8 +23,8 @@ const CoursesPage = () => {
                     />
                 ))}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {codeBlockProps.map((codeBlockProps, index ) => 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 lg:my-10 items-start">
+            {codeExamples.map((codeBlockProps, index ) => 
                 <CodeBlock key={index} code={codeBlockProps.code} language={codeBlockProps.language} />
             )}
             </div>

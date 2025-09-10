@@ -1,5 +1,4 @@
 import AboutSection from "@/components/AboutSection";
-import CodeBlock from "@/components/CodeBlock";
 import PageIntro from "@/components/PageIntro";
 import { pageIntroData } from "@/data/data";
 
